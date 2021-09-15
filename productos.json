@@ -1,0 +1,107 @@
+[
+    {
+        "precio": 500,
+        "id": 1,
+        "categoria": "platos",
+        "title": "hamburguesa carne/pollo",
+        "image": "./images/dishes/dish-1.png"
+    },
+    {
+        "precio": 500,
+        "id": 2,
+        "categoria": "platos",
+        "title": "alitas de pollo frito",
+        "image": "./images/dishes/dish-2.png"
+    },
+    {
+        "precio": 500,
+        "id": 3,
+        "categoria": "platos",
+        "title": "pavo horneado",
+        "image": "./images/dishes/dish-3.png"
+    },
+    {
+        "precio": 500,
+        "id": 4,
+        "categoria": "platos",
+        "title": "Pizza",
+        "image": "./images/dishes/dish-4.png"
+    },
+    {
+        "precio": 500,
+        "id": 5,
+        "categoria": "platos",
+        "title": "galleta rellena dulce",
+        "image": "./images/dishes/dish-5.png"
+    },
+    {
+        "precio": 500,
+        "id": 6,
+        "categoria": "platos",
+        "title": "pollo frito",
+        "image": "./images/dishes/dish-6.png"
+    },
+    {
+        "precio": 500,
+        "id": 7,
+        "categoria": "menu",
+        "title": "pizza",
+        "image": "./images/menu/menu-1.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 8,
+        "categoria": "menu",
+        "title": "Hamburguesa",
+        "image": "./images/menu/menu-2.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 9,
+        "categoria": "menu",
+        "title": "crepes",
+        "image": "./images/menu/menu-3.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 10,
+        "categoria": "menu",
+        "title": "grofes belgas",
+        "image": "./images/menu/menu-4.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 11,
+        "categoria": "menu",
+        "title": "chocotorta",
+        "image": "./images/menu/menu-5.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 12,
+        "categoria": "menu",
+        "title": "cupcakes",
+        "image": "./images/menu/menu-6.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 13,
+        "categoria": "menu",
+        "title": "limonada",
+        "image": "./images/menu/menu-7.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 14,
+        "categoria": "menu",
+        "title": "ensalada de frutas",
+        "image": "./images/menu/menu-8.jpg"
+    },
+    {
+        "precio": 500,
+        "id": 15,
+        "categoria": "menu",
+        "title": "jugos naturales",
+        "image": "./images/menu/menu-9.jpg"
+    }
+]
