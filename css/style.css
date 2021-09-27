@@ -729,6 +729,61 @@ header .icons #menu-bars {
     visibility: visible;
 }
 
+/*================= FINALIZAR COMPRA ======================*/
+.finalizarCompra {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 100000;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.finalizarCompra .formFinalizarCompra {
+    width: 80rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.finalizarCompra .formFinalizarCompra h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.finalizarCompra .formFinalizarCompra form {
+    text-align: end;
+}
+
+.finalizarCompra .formFinalizarCompra form div {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finalizarCompra .formFinalizarCompra form div label {
+    font-size: 2rem;
+}
+
+.finalizarCompra .formFinalizarCompra form div input {
+    width: 60%;
+    border: .1rem solid #000;
+    border-radius: .5rem;
+    padding: 0 2rem;
+}
+
+.finalizarCompra.active{
+    opacity: 1;
+    visibility: visible;
+}
+
 /*================= MEDIAS QUERIES ======================*/
 /*================= MAX WIDTH 991PX ======================*/
 @media only screen and (max-width: 991px) {
@@ -783,6 +838,30 @@ header .icons #menu-bars {
     .home .home-slider .slide .content h3 {
         font-size: 5rem;
     }
+
+    .carrito-container #carrito {
+        width: 90%;
+    }
+
+    .carrito-container #carrito-content #items .btn-sum, .carrito-container #carrito-content #items .btn-res {
+        padding: .2rem 2rem;
+    }
+
+    .carrito-container #carrito-content #footer .vaciar {
+        padding: .2rem 2rem;
+    }
+
+    .finalizarCompra .formFinalizarCompra {
+        width: 90%;
+    }
+
+    .finalizarCompra .formFinalizarCompra form {
+        text-align: start;
+    }
+
+    .finalizarCompra .formFinalizarCompra form div input {
+        width: 50%;
+    }
 }
 
 /*================= MAX WIDTH 991PX ======================*/
@@ -798,6 +877,18 @@ header .icons #menu-bars {
     }
 
     .order form .inputBox .input {
+        width: 100%;
+    }
+
+    .finalizarCompra .formFinalizarCompra form div {
+        flex-direction: column;
+    }
+
+    .finalizarCompra .formFinalizarCompra form {
+        text-align: center;
+    }
+
+    .finalizarCompra .formFinalizarCompra form div input {
         width: 100%;
     }
 }

@@ -18,6 +18,8 @@
     
     <!-- scripts -->
     <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
     <script defer src="./js/carrito.js"></script>
     </head>
@@ -63,7 +65,7 @@
                             <span>nuestro plato especial</span>
                             <h3>fideos picantes</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                            <a href="#" class="btn">ordenar ahora</a>
+                            <a href="#order" class="btn">ordenar ahora</a>
                         </div>
                         <div class="image">
                             <img src="./images/home-img-1.png" alt="">
@@ -75,7 +77,7 @@
                             <span>nuestro plato especial</span>
                             <h3>pollo frito</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                            <a href="#" class="btn">ordenar ahora</a>
+                            <a href="#order" class="btn">ordenar ahora</a>
                         </div>
                         <div class="image">
                             <img src="./images/home-img-2.png" alt="">
@@ -87,7 +89,7 @@
                             <span>nuestro plato especial</span>
                             <h3>pizza caliente</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
-                            <a href="#" class="btn">ordenar ahora</a>
+                            <a href="#order" class="btn">ordenar ahora</a>
                         </div>
                         <div class="image">
                             <img src="./images/home-img-3.png" alt="">
@@ -533,52 +535,52 @@
             <h4 class="heading">gratis y rápido</h4>
 
             <!-- form order starts -->
-            <form action="">
+            <form>
                 <div class="inputBox">
                     <div class="input">
                         <span>nombre y apellido</span>
-                        <input type="text" name="" id="" placeholder="ingrese su nombre">
+                        <input type="text" name="" id="" placeholder="ingrese su nombre" >
                     </div>
                     <div class="input">
                         <span>número de contacto</span>
-                        <input type="number" name="" id="" placeholder="+549 11-2233-4455">
+                        <input type="number" name="" id="" placeholder="+549 11-2233-4455" >
                     </div>
                 </div>
 
                 <div class="inputBox">
                     <div class="input">
                         <span>su orden</span>
-                        <input type="text" name="" id="" placeholder="ingrese su orden">
+                        <input type="text" name="" id="" placeholder="ingrese su orden" >
                     </div>
                     <div class="input">
                         <span>comida adicional</span>
-                        <input type="test" name="" id="" placeholder="adicional">
+                        <input type="test" name="" id="" placeholder="adicional" >
                     </div>
                 </div>
 
                 <div class="inputBox">
                     <div class="input">
                         <span>cantidad</span>
-                        <input type="number" name="" id="" placeholder="cuantos pedidos">
+                        <input type="number" name="" id="" placeholder="cuantos pedidos" >
                     </div>
                     <div class="input">
                         <span>dia y hora</span>
-                        <input type="datetime-local">
+                        <input type="datetime-local" >
                     </div>
                 </div>
 
                 <div class="inputBox">
                     <div class="input">
                         <span>su dirección</span>
-                        <textarea name="" placeholder="ingrese su dirección" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" placeholder="ingrese su dirección" id="" cols="30" rows="10" ></textarea>
                     </div>
                     <div class="input">
                         <span>su mensaje</span>
-                        <textarea name="" placeholder="ingrese su mensaje" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" placeholder="ingrese su mensaje" id="" cols="30" rows="10" ></textarea>
                     </div>
                 </div>
 
-                <input type="submit" value="ordernar ahora" class="btn">
+                <input type="submit" value="ordernar ahora" class="btn" id="finalizar-compra-order">
 
             </form>
 
@@ -629,14 +631,33 @@
         <!-- footer section ends -->
 
 
-
         <!-- finalizar compra -->
-        <div id="finalizarCompra" style="display: none;">
+        <div id="finalizarCompra" class="finalizarCompra">
+            <div class="formFinalizarCompra">
+                <h1>datos y direccion del comprador</h1>
+                <form action="" id="form-finalizar-compra">
+                    <div>
+                        <label for="nombreApellidoFC">nombre y apellido</label>
+                        <input type="text" name="nameFC" id="nombreApellidoFC">
+                    </div>
+                    <div>
+                        <label for="direccionFC">dirección</label>
+                        <input type="text" name="direccionFC" id="direccionFC">
+                    </div>
+                    <div>
+                        <label for="datosAuxFC">algun dato que debamos saber:</label>
+                        <input type="text" name="datosAuxFC" id="datosAuxFC">
+                    </div>
+                    <!-- <input type="submit" value="Comprar" class="btn" id="btn-finalizar-compra"> -->
+                </form>
+                <button class="btn" id="btn-finalizar-compra" type="submit">comprar</button>
+            </div>
         </div>
 
-        <!-- compra finalizada -->
+        <!-- compra finalizada
         <div id="compraFinalizada" style="display: none;">
-        </div>
+            
+        </div> -->
 
 
 

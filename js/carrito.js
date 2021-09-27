@@ -96,6 +96,13 @@ const addCarrito = e => {
     // console.log(e.target.classList.contains('btn-add')) // devuelve true si el target contiene la clase 'btn-add'
     if (e.target.classList.contains('btn-add')) {
         setCarrito(e.target.parentElement)
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Agregado al carrito',
+            showConfirmButton: false,
+            timer: 1000
+        })
     }
     e.stopPropagation()
 }
@@ -188,3 +195,78 @@ const btnAccion = e => {
 
     e.stopPropagation()
 }
+
+/* ==============================================
+            FINALIZAR COMPRAR
+================================================== */
+
+document.getElementById('finalizar-compra').onclick = () => {
+
+    if (Object.keys(objetoCarrito).length === 0) {
+        $('#carrito-container').toggleClass('active');
+        $('#carrito-container').delay('700');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Algo salio Mal!',
+            footer: 'Su carrito se encuentra vacío actualmente'
+        })
+        return
+    }
+
+    $('#carrito-container').toggleClass('active');
+    $('#finalizarCompra').delay(500)
+    $('#finalizarCompra').toggleClass('active');
+
+    //==================================//
+
+    // document.getElementById('carrito-container').classList.toggle('active')
+    // $('#finalizarCompra').delay(500)
+    // document.getElementById('finalizarCompra').classList.toggle('active')
+}
+
+/* ==============================================
+            COMPRA FINALIZADA
+================================================== */
+document.getElementById('btn-finalizar-compra').onclick = () => {
+
+    $('#finalizarCompra').toggleClass('active')
+    $('#finalizarCompra').delay(700)
+    Swal.fire({
+                icon: 'success',
+                title: 'Compra Finalizada',
+                text: 'Muchas Gracias por utilizar nuestro sistema!'
+    })
+
+    objetoCarrito = {}
+    pintarCarrito()
+
+
+    // $('#finalizarCompra').fadeOut(700,()=>{
+    //     Swal.fire({
+    //         icon: 'success',
+    //         title: 'Compra Finalizada',
+    //         text: 'Muchas Gracias por utilizar nuestro sistema!'
+    //     })
+
+    //     objetoCarrito = {}
+    //     pintarCarrito()
+    // })
+}
+
+/* ==============================================
+            COMPRA FINALIZADA - SECTION ORDER
+================================================== */
+document.getElementById('finalizar-compra-order').onclick = () => {
+    Swal.fire({
+        icon: 'success',
+        title: 'Compra Finalizada',
+        text: 'Muchas Gracias por utilizar nuestro sistema! en breve recibira su pedido.'
+    })
+}
+
+/* ==============================================
+                    BUSQUEDA
+================================================== */
+let x = $('#search-form input').val()
+console.log(x);
