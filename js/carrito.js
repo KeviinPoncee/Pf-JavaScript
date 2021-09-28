@@ -257,16 +257,11 @@ document.getElementById('btn-finalizar-compra').onclick = () => {
 /* ==============================================
             COMPRA FINALIZADA - SECTION ORDER
 ================================================== */
-document.getElementById('finalizar-compra-order').onclick = () => {
+document.getElementById('finalizar-compra-order').onclick = (e) => {
     Swal.fire({
         icon: 'success',
         title: 'Compra Finalizada',
         text: 'Muchas Gracias por utilizar nuestro sistema! en breve recibira su pedido.'
     })
+    e.stopPropagation()
 }
-
-/* ==============================================
-                    BUSQUEDA
-================================================== */
-let x = $('#search-form input').val()
-console.log(x);
